@@ -1,0 +1,224 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+body{
+    background-color: rgb(240, 240, 240);
+}
+ .container{
+    width: 90vw;
+    height: 80vh;
+    margin: 2em auto;
+
+ }
+
+ .content{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 50px 50px;
+    grid-template-areas: "one two three four" "five five five six" "five five five six" "eight nine ten eleven";
+    gap: 1em;
+    margin: 1em auto;
+
+ }
+
+ .one{
+    grid-area: one;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    align-self: flex-end;
+    font-size: .4rem;
+    background-color: #fff;
+    box-shadow: .2em .2em .2em .2em rgb(182, 178, 178);
+ 
+ }
+
+ .two{
+    grid-area: two;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    font-size: .5rem;
+    align-self: flex-end;
+    background-color: #fff;
+    box-shadow: .2em .2em .2em .2em rgb(182, 178, 178);
+   
+ }
+ .three{
+    grid-area: three;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    height: 1.5rem;
+    font-size: .5rem;
+    background-color: #fff;
+    box-shadow: .2em .2em .2em .2em rgb(182, 178, 178);
+
+ }
+ .four{
+    grid-area: four;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    align-self: flex-end;
+    font-size: .5rem;
+    background-color: #fff;
+    box-shadow: .2em .2em .2em .2em rgb(182, 178, 178);
+
+ }
+ .five{
+    grid-area: five;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-image: url('./image/photo-1563206767-5b18f218e8de.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+    width: 95%;
+    border: .1rem solid ;
+ }
+ .five-5 h1,p{
+    margin-bottom: 1rem;
+ }
+ .btn{
+    width: 6rem;
+    color: #fff;
+    background-color: darkgray;
+    padding: .2em;
+    border: none;
+    border-radius: .2em;
+
+ }
+ .six{
+    grid-area: six;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1em;   
+
+ }
+ .buynow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    background-color: #fff;
+    box-shadow: .2em .1em .2em .1em rgb(182, 178, 178);
+ }
+ .buynow h2{
+    margin-top: .5em;
+ }
+ .buynow h4{
+    margin-top: 1em;
+ }
+ .role{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .role img{
+    display: block;
+    width: min(100% - 15%, 2em);
+ }
+ .role h3{
+    margin: 1em;
+ }
+ .bt-6{
+    color: darkgray;
+    background-color: black;
+    margin: 1em auto;
+    padding: .3em;
+    width: 7em;
+ }
+
+ .eight{
+    grid-area: eight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    margin: auto;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: .2em .1em .2em .1em rgb(182, 178, 178);
+    
+ }
+ .nine{
+    grid-area: nine;
+     display: flex;
+     padding: 2em;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: .2em .1em .2em .1em rgb(182, 178, 178);
+
+ }
+ .ten{
+    grid-area: ten;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: .2em .1em .2em .1em rgb(182, 178, 178);
+ }
+ .eleven{
+    grid-area: eleven;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: .2em .1em .2em .1em rgb(182, 178, 178);
+ }
+ 
+
+
+
+
+
+
+ @media screen and (max-width: 936px){
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .one, .two, .three, .four{
+        align-self: auto;
+        font-size: .5em;
+        padding: .4em;
+
+    }
+    .four{
+        background-color: rgb(128, 128, 128);
+        color: #fff;
+    }
+    .six{
+      align-items: center;
+    }
+    .five{
+      width: 100%;
+    }
+    .role{
+      justify-content: center;
+    }
+    
+ }
